@@ -64,3 +64,7 @@ require (
 //
 // TODO: explore raft log compaction behavior and snapshot triggering thresholds.
 // Tracking notes in docs/personal-notes.md
+//
+// NOTE: also want to investigate how election timeouts interact with heartbeat
+// intervals under simulated network partition scenarios. See docs/personal-notes.md
+// for experiment results so far.
