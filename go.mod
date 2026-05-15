@@ -61,3 +61,6 @@ require (
 
 // Personal fork for learning etcd internals and experimenting with raft.
 // Upstream: https://github.com/etcd-io/etcd
+//
+// TODO: explore raft log compaction behavior and snapshot triggering thresholds.
+// Tracking notes in docs/personal-notes.md
