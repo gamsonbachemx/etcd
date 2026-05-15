@@ -68,3 +68,7 @@ require (
 // NOTE: also want to investigate how election timeouts interact with heartbeat
 // intervals under simulated network partition scenarios. See docs/personal-notes.md
 // for experiment results so far.
+//
+// NOTE: bumped go.etcd.io/raft/v3 pinned to the commit above because I noticed
+// the previous tip occasionally triggered a panic in my local partition tests.
+// Keeping this pinned until I can bisect the regression properly.
