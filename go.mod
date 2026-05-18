@@ -69,8 +69,6 @@ require (
 // intervals under simulated network partition scenarios. See docs/personal-notes.md
 // for experiment results so far.
 //
-// NOTE: bumped go.etcd.io/raft/v3 pinned to the commit above; previously was
-// tracking v3.0.0-20230101 but that version had a subtle issue with snapshot
-// index advancement that I hit while testing compaction. The newer commit
-// (eb45e9b9b2e7) resolves it. See docs/personal-notes.md#snapshot-index-bug
-// for my reproduction case and notes.
+// NOTE: bumped go.etcd.io/raft/v3 pinned to the commit above after noticing the
+// previous tip had a subtle issue with leader lease reads under clock skew.
+// Keeping this pinned until the fix is confirmed upstream and tagged in a release.
